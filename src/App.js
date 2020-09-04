@@ -4,17 +4,22 @@ import Button from "./components/Button/Button";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Buttons</h1>
-      </header>
-      <div>
-        <Button />
+    <>
+      <div className="App">
+        <header className="App-header">
+          <h1>Buttons</h1>
+        </header>
+        <div className="buttons">
+          <div>
+            <Button>Default</Button>
+          </div>
+        </div>
       </div>
+
       <footer>
-        <h1>Day</h1>
+        <span>Dayenne Souza, 2020</span>
       </footer>
-    </div>
+    </>
   );
 }
 
