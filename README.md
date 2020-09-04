@@ -1,5 +1,9 @@
 # React components
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/4e8facd9-91ef-4530-b436-74c5b3ae2091/deploy-status)](https://app.netlify.com/sites/day-react-components/deploys)
+
+Check the [Demo here](day-react-components.netlify.app)
+
 ## Description:
 
 A project with small components made and styled interely by me using React and SCSS.
