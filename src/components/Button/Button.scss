@@ -8,6 +8,10 @@ button {
   cursor: pointer;
   box-shadow: 0px 2px 3px rgba(51, 51, 51, 0.2);
   color: $button-dark-text;
+  font-size: 14px;
+  min-width: 49px;
+  min-height: 20px;
+  outline: none;
 
   &:hover,
   &:focus {

@@ -10,9 +10,10 @@ function App() {
           <h1>Buttons</h1>
         </header>
         <div className="buttons">
-          <div>
-            <Button>Default</Button>
+          <div className="code-label">
+            <code>{'<Button />'}</code>
           </div>
+            <Button>Default</Button>
         </div>
       </div>
 
