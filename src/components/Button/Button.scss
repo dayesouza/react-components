@@ -19,13 +19,13 @@ button {
     margin-left: 3px;
   }
 
-  &:focus {
+  &:focus:not([disabled]) {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-default;
   }
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $button-default-hover;
   }
 }
@@ -35,12 +35,12 @@ button[variant="outline"] {
   color: $button-blue;
   border: 1px solid $button-blue;
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $button-blue-hover;
   }
 
-  &:focus {
+  &:focus:not([disabled]) {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-blue-hover;
   }
@@ -51,12 +51,12 @@ button[variant="text"] {
   color: $button-blue;
   box-shadow: none;
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $button-blue-hover;
   }
 
-  &:focus {
+  &:focus:not([disabled]) {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-blue;
   }
@@ -71,10 +71,6 @@ button[disabled] {
   cursor: not-allowed;
   background-color: $button-disabled-bg;
   color: $disabled-color;
-
-  &[variant="text"] {
-    background-color: white;
-  }
 }
 
 button.size-sm {
@@ -89,13 +85,13 @@ button.primary {
   color: white;
   background-color: $button-blue;
 
-  &:focus {
+  &:focus:not([disabled]) {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-blue;
   }
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $button-primary-hover;
   }
 }
@@ -104,13 +100,13 @@ button.secondary {
   color: white;
   background-color: $button-secondary;
 
-  &:focus {
+  &:focus:not([disabled]) {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-secondary;
   }
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $button-secondary-hover;
   }
 }
@@ -119,13 +115,13 @@ button.danger {
   color: white;
   background-color: $button-danger;
 
-  &:focus {
+  &:focus:not([disabled]) {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-danger;
   }
 
-  &:hover,
-  &:focus {
+  &:hover:not([disabled]),
+  &:focus:not([disabled]) {
     background-color: $button-danger-hover;
   }
 }
