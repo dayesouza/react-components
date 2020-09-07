@@ -37,6 +37,42 @@ function App() {
             Default
           </Button>
         </ButtonRowLayout>
+
+        <ButtonRowLayout
+          label={[
+            "<Button startIcon='local_grocery_store' />",
+            "<Button endIcon='local_grocery_store' />",
+          ]}
+        >
+          <Button startIcon="local_grocery_store">Default</Button>
+          <Button endIcon="local_grocery_store">Default</Button>
+        </ButtonRowLayout>
+
+        <ButtonRowLayout
+          label={[
+            "<Button size='sm' />",
+            "<Button size='md' />",
+            "<Button size='lg' />",
+          ]}
+        >
+          <Button size="sm">Default</Button>
+          <Button size="md">Default</Button>
+          <Button size="lg">Default</Button>
+        </ButtonRowLayout>
+
+        <ButtonRowLayout
+          label={[
+            "<Button color='default' />",
+            "<Button color='primary' />",
+            "<Button color='secondary' />",
+            "<Button color='danger' />",
+          ]}
+        >
+          <Button color="default">Default</Button>
+          <Button color="primary">Default</Button>
+          <Button color="secondary">Default</Button>
+          <Button color="danger">Default</Button>
+        </ButtonRowLayout>
       </div>
 
       <footer>

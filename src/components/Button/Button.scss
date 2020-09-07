@@ -13,6 +13,12 @@ button {
   min-height: 20px;
   font-family: Noto Sans JP;
 
+  i.material-icons {
+    font-size: 14px;
+    margin-right: 3px;
+    margin-left: 3px;
+  }
+
   &:focus {
     outline: 0;
     box-shadow: 0 0 0 0.2rem $button-default;
@@ -68,5 +74,58 @@ button[disabled] {
 
   &[variant="text"] {
     background-color: white;
+  }
+}
+
+button.size-sm {
+  padding: 6px 12px 6px 12px;
+}
+
+button.size-lg {
+  padding: 11px 22px 11px 22px;
+}
+
+button.primary {
+  color: white;
+  background-color: $button-blue;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $button-blue;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-primary-hover;
+  }
+}
+
+button.secondary {
+  color: white;
+  background-color: $button-secondary;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $button-secondary;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-secondary-hover;
+  }
+}
+
+button.danger {
+  color: white;
+  background-color: $button-danger;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $button-danger;
+  }
+
+  &:hover,
+  &:focus {
+    background-color: $button-danger-hover;
   }
 }
