@@ -11,10 +11,62 @@ button {
   font-size: 14px;
   min-width: 49px;
   min-height: 20px;
-  outline: none;
+  font-family: Noto Sans JP;
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $button-default;
+  }
 
   &:hover,
   &:focus {
     background-color: $button-default-hover;
+  }
+}
+
+button[variant="outline"] {
+  background-color: white;
+  color: $button-blue;
+  border: 1px solid $button-blue;
+
+  &:hover,
+  &:focus {
+    background-color: $button-blue-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $button-blue-hover;
+  }
+}
+
+button[variant="text"] {
+  background-color: white;
+  color: $button-blue;
+  box-shadow: none;
+
+  &:hover,
+  &:focus {
+    background-color: $button-blue-hover;
+  }
+
+  &:focus {
+    outline: 0;
+    box-shadow: 0 0 0 0.2rem $button-blue;
+  }
+}
+
+button.disable-shadow,
+button[disabled] {
+  box-shadow: none;
+}
+
+button[disabled] {
+  cursor: not-allowed;
+  background-color: $button-disabled-bg;
+  color: $disabled-color;
+
+  &[variant="text"] {
+    background-color: white;
   }
 }
