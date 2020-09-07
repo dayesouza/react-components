@@ -2,6 +2,7 @@ import React from "react";
 import "./App.scss";
 import Button from "./components/Button/Button";
 import ButtonRowLayout from "./components/ButtonRowLayout/ButtonRowLayout";
+import Footer from "./components/Footer/Footer";
 
 function App() {
   return (
@@ -75,9 +76,7 @@ function App() {
         </ButtonRowLayout>
       </div>
 
-      <footer>
-        <span>Dayenne Souza, 2020</span>
-      </footer>
+      <Footer />
     </>
   );
 }
