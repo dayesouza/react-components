@@ -1,6 +1,6 @@
 import React from "react";
 import "./App.scss";
-import Footer from "./components/Footer/Footer";
+import Footer from "./components/Layout/Footer/Footer";
 import {
   BrowserRouter as Router,
   Route,
@@ -9,7 +9,7 @@ import {
 } from "react-router-dom";
 import Buttons from "./pages/Buttons/Buttons";
 import Home from "./pages/Home/Home";
-import Sidebar from "./components/Sidebar/Sidebar";
+import Sidebar from "./components/Layout/Sidebar/Sidebar";
 
 function App() {
   return (

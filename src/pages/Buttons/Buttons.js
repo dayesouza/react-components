@@ -1,6 +1,7 @@
 import React from "react";
 import Button from "../../components/Button/Button";
-import ButtonRowLayout from "../../components/ButtonRowLayout/ButtonRowLayout";
+import ButtonRowLayout from "../../components/Layout/ButtonRowLayout/ButtonRowLayout";
+import Card from "../../components/Card/Card";
 
 export default function Buttons() {
   return (
@@ -8,6 +9,7 @@ export default function Buttons() {
       <header className="App-header">
         <h1>Buttons</h1>
       </header>
+
       <ButtonRowLayout label="<Button />">
         <Button>Default</Button>
       </ButtonRowLayout>
@@ -25,10 +27,7 @@ export default function Buttons() {
       </ButtonRowLayout>
 
       <ButtonRowLayout
-        label={[
-          "<Button disableShadow />",
-          "<Button disabled variant='text'/>",
-        ]}
+        label={["<Button disabled />", "<Button disabled variant='text'/>"]}
       >
         <Button disabled>Default</Button>
         <Button disabled variant="text">
