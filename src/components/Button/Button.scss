@@ -1,4 +1,4 @@
-@import "../../colors.scss";
+@import "../../variables.scss";
 
 button {
   padding: 8px 16px 8px 16px;
@@ -14,9 +14,10 @@ button {
   font-family: Noto Sans JP;
 
   i.material-icons {
-    font-size: 14px;
+    font-size: 16px;
     margin-right: 3px;
     margin-left: 3px;
+    vertical-align: middle;
   }
 
   &:focus:not([disabled]) {

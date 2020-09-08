@@ -1,13 +1,14 @@
-@import "../../colors.scss";
+@import "../../variables.scss";
 
 footer {
   height: 2.5em;
   bottom: 0;
-  width: 100%;
   background-color: $bg-grey;
   color: black;
   text-align: center;
   padding: 2px;
+  margin-left: $sidebar-width;
+  margin-top: auto;
 
   p {
     margin-top: 8px;

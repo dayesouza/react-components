@@ -1,4 +1,4 @@
-@import "./colors.scss";
+@import "./variables.scss";
 
 .App {
   text-align: center;
@@ -34,4 +34,20 @@
     flex-direction: row;
     justify-content: space-evenly;
   }
+}
+
+main {
+  margin-left: $sidebar-width;
+  padding: 0px 10px;
+  margin-bottom: 15px;
+}
+
+.app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.text-align-center {
+  text-align: center;
 }
