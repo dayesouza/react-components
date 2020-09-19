@@ -1,0 +1,17 @@
+@import "../../variables.scss";
+
+input {
+  border-radius: 8px;
+  min-width: 200px;
+  min-height: 56px;
+  border: 1px solid $input-border;
+  box-sizing: border-box;
+  font-size: 14px;
+  padding: 12px;
+  color: $input-text-color;
+  font-family: Noto Sans JP;
+
+  &:hover {
+    border: 1px solid $input-text-color;
+  }
+}

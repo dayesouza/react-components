@@ -1,0 +1,16 @@
+@import "../../variables.scss";
+
+div.control-group {
+  display: flex;
+  flex-direction: column;
+  &:focus-within {
+    input:not([disabled]) {
+      outline: 0;
+      border: 1px solid $input-focus;
+    }
+
+    label {
+      color: $input-focus;
+    }
+  }
+}

@@ -1,16 +1,16 @@
 import React from "react";
 import "./Sidebar.scss";
 import { NavLink } from "react-router-dom";
+import routes from "../../../routes";
 
 export default function Sidebar() {
   return (
     <nav class="sidenav">
-      <NavLink to="/home" activeClassName="selected">
-        Home
-      </NavLink>
-      <NavLink to="/buttons" activeClassName="selected">
-        Buttons
-      </NavLink>
+      {routes.map((r) => (
+        <NavLink to={r.url} activeClassName="selected">
+          {r.name}
+        </NavLink>
+      ))}
     </nav>
   );
 }

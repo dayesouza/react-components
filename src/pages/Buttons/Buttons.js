@@ -1,41 +1,39 @@
 import React from "react";
 import Button from "../../components/Button/Button";
-import ButtonRowLayout from "../../components/Layout/ButtonRowLayout/ButtonRowLayout";
-import Card from "../../components/Card/Card";
+import ComponentRowLayout from "../../components/Layout/ComponentRowLayout/ComponentRowLayout";
+import PageHeader from "../../components/Layout/PageHeader/PageHeader";
 
 export default function Buttons() {
   return (
     <div class="text-align-center">
-      <header className="App-header">
-        <h1>Buttons</h1>
-      </header>
+      <PageHeader name="Buttons" />
 
-      <ButtonRowLayout label="<Button />">
+      <ComponentRowLayout label="<Button />">
         <Button>Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout label='<Button variant="outline"/>'>
+      <ComponentRowLayout label='<Button variant="outline"/>'>
         <Button variant="outline">Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout label='<Button variant="text"/>'>
+      <ComponentRowLayout label='<Button variant="text"/>'>
         <Button variant="text">Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout label="<Button disableShadow />">
+      <ComponentRowLayout label="<Button disableShadow />">
         <Button disableShadow>Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout
+      <ComponentRowLayout
         label={["<Button disabled />", "<Button disabled variant='text'/>"]}
       >
         <Button disabled>Default</Button>
         <Button disabled variant="text">
           Default
         </Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout
+      <ComponentRowLayout
         label={[
           "<Button startIcon='local_grocery_store' />",
           "<Button endIcon='local_grocery_store' />",
@@ -43,9 +41,9 @@ export default function Buttons() {
       >
         <Button startIcon="local_grocery_store">Default</Button>
         <Button endIcon="local_grocery_store">Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout
+      <ComponentRowLayout
         label={[
           "<Button size='sm' />",
           "<Button size='md' />",
@@ -55,9 +53,9 @@ export default function Buttons() {
         <Button size="sm">Default</Button>
         <Button size="md">Default</Button>
         <Button size="lg">Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
 
-      <ButtonRowLayout
+      <ComponentRowLayout
         label={[
           "<Button color='default' />",
           "<Button color='primary' />",
@@ -69,7 +67,7 @@ export default function Buttons() {
         <Button color="primary">Default</Button>
         <Button color="secondary">Default</Button>
         <Button color="danger">Default</Button>
-      </ButtonRowLayout>
+      </ComponentRowLayout>
     </div>
   );
 }

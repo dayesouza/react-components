@@ -7,9 +7,8 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
-import Buttons from "./pages/Buttons/Buttons";
-import Home from "./pages/Home/Home";
 import Sidebar from "./components/Layout/Sidebar/Sidebar";
+import routes from "./routes";
 
 function App() {
   return (
@@ -19,12 +18,11 @@ function App() {
         <main>
           <Switch>
             <Redirect exact from="/" to="/home" />
-            <Route exact path="/home">
-              <Home />
-            </Route>
-            <Route exact path="/buttons">
-              <Buttons />
-            </Route>
+            {routes.map((r) => (
+              <Route exact path={r.url}>
+                {r.component}
+              </Route>
+            ))}
           </Switch>
         </main>
         <Footer />

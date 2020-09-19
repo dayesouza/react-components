@@ -13,6 +13,9 @@ export default function Home() {
       <Link to="/buttons">
         <Button color="secondary">Go to Buttons</Button>
       </Link>
+      <Link to="/inputs">
+        <Button color="secondary">Go to Inputs</Button>
+      </Link>
     </div>
   );
 }

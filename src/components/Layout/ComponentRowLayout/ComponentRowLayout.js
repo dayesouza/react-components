@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function ButtonRowLayout({ children, label }) {
+export default function ComponentRowLayout({ children, label }) {
   return (
     <div className="flex-column">
       <div className="flex-row">
