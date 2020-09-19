@@ -12,7 +12,7 @@ For icons the library is [Google Material Design](https://material.io/resources/
 
 Based on [this challenge from devchalleges.io](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY)
 
-Status do Projeto: Em desenvolvimento :warning:
+Project Status: Development :warning:
 
 ## How to run:
 
