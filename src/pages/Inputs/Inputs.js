@@ -22,6 +22,23 @@ export default function Inputs() {
           <Input error label="Label" placeholder="Placeholder"></Input>
         </ControlGroup>
       </ComponentRowLayout>
+
+      <ComponentRowLayout label="<Input disabled />">
+        <ControlGroup>
+          <Label title="Label"></Label>
+          <Input disabled placeholder="Placeholder"></Input>
+        </ControlGroup>
+      </ComponentRowLayout>
+
+      {/* <ComponentRowLayout label='<Input helperText="Some interesting text" />'>
+        <ControlGroup>
+          <Label title="Label"></Label>
+          <Input
+            helperText="Some interesting text"
+            placeholder="Placeholder"
+          ></Input>
+        </ControlGroup>
+      </ComponentRowLayout> */}
     </div>
   );
 }

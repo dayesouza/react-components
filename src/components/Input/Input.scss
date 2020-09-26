@@ -2,7 +2,7 @@
 
 input {
   border-radius: 8px;
-  min-width: 200px;
+  width: 200px;
   min-height: 56px;
   border: 1px solid $input-border;
   box-sizing: border-box;
@@ -10,10 +10,15 @@ input {
   padding: 12px;
   color: $input-text-color;
   font-family: Noto Sans JP;
+  // margin: auto;
 
-  &:hover,
+  &:hover:not([disabled]),
   &.error:hover {
     border: 1px solid $input-text-color;
+  }
+
+  &[disabled] {
+    background-color: #f2f2f2;
   }
 }
 
