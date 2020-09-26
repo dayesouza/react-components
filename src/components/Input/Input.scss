@@ -11,7 +11,12 @@ input {
   color: $input-text-color;
   font-family: Noto Sans JP;
 
-  &:hover {
+  &:hover,
+  &.error:hover {
     border: 1px solid $input-text-color;
   }
+}
+
+input.error {
+  border: 1px solid red;
 }

@@ -16,6 +16,12 @@ export default function Inputs() {
           <Input placeholder="Placeholder"></Input>
         </ControlGroup>
       </ComponentRowLayout>
+
+      <ComponentRowLayout label="<Input error />">
+        <ControlGroup>
+          <Input error label="Label" placeholder="Placeholder"></Input>
+        </ControlGroup>
+      </ComponentRowLayout>
     </div>
   );
 }

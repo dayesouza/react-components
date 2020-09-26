@@ -9,8 +9,19 @@ div.control-group {
       border: 1px solid $input-focus;
     }
 
-    label {
+    label:not(.error) {
       color: $input-focus;
+    }
+
+    input.error:not([disabled]) {
+      outline: 0;
+      border: 1px solid $danger;
+    }
+  }
+
+  &:hover {
+    label.error {
+      color: $input-text-color;
     }
   }
 }

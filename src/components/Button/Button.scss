@@ -113,11 +113,11 @@ button.secondary {
 
 button.danger {
   color: white;
-  background-color: $button-danger;
+  background-color: $danger;
 
   &:focus:not([disabled]) {
     outline: 0;
-    box-shadow: 0 0 0 0.2rem $button-danger;
+    box-shadow: 0 0 0 0.2rem $danger;
   }
 
   &:hover:not([disabled]),

@@ -1,4 +1,9 @@
+@import "../../variables.scss";
 label {
   font-size: 12px;
   margin-bottom: 4px;
+
+  &.error {
+    color: $danger;
+  }
 }

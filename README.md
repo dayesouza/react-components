@@ -10,7 +10,9 @@ A project with small components made and styled interely by me using React and S
 
 For icons the library is [Google Material Design](https://material.io/resources/icons/?style=baseline)
 
-Based on [this challenge from devchalleges.io](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY)
+Buttons: Based on [this challenge from devchalleges.io](https://devchallenges.io/challenges/ohgVTyJCbm5OZyTB2gNY)
+
+Inputs: Based on [this challenge from devchalleges.io](https://devchallenges.io/challenges/TSqutYM4c5WtluM7QzGp)
 
 Project Status: Development :warning:
 
