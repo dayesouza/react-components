@@ -5,9 +5,9 @@ import routes from "../../../routes";
 
 export default function Sidebar() {
   return (
-    <nav class="sidenav">
-      {routes.map((r) => (
-        <NavLink to={r.url} activeClassName="selected">
+    <nav className="sidenav">
+      {routes.map((r, index) => (
+        <NavLink to={r.url} key={index} activeClassName="selected">
           {r.name}
         </NavLink>
       ))}

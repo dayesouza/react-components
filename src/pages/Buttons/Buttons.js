@@ -5,7 +5,7 @@ import PageHeader from "../../components/Layout/PageHeader/PageHeader";
 
 export default function Buttons() {
   return (
-    <div class="text-align-center">
+    <div className="text-align-center">
       <PageHeader name="Buttons" />
 
       <ComponentRowLayout label="<Button />">

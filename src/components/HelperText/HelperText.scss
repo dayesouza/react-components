@@ -1,0 +1,11 @@
+@import "../../variables.scss";
+
+span.helper-text {
+  font-size: 10px;
+  text-align: initial;
+  color: $input-border;
+}
+
+span.error {
+  color: $danger;
+}

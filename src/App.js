@@ -18,8 +18,8 @@ function App() {
         <main>
           <Switch>
             <Redirect exact from="/" to="/home" />
-            {routes.map((r) => (
-              <Route exact path={r.url}>
+            {routes.map((r, index) => (
+              <Route exact key={index} path={r.url}>
                 {r.component}
               </Route>
             ))}

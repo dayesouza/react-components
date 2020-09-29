@@ -7,7 +7,7 @@ import Label from "../../components/Label/Label";
 
 export default function Inputs() {
   return (
-    <div class="text-align-center">
+    <div className="text-align-center">
       <PageHeader name="Inputs"></PageHeader>
 
       <ComponentRowLayout label="<Input />">
@@ -30,7 +30,12 @@ export default function Inputs() {
         </ControlGroup>
       </ComponentRowLayout>
 
-      {/* <ComponentRowLayout label='<Input helperText="Some interesting text" />'>
+      <ComponentRowLayout
+        label={[
+          '<Input helperText="Some interesting text" />',
+          '<Input helperText="Some interesting text" error/>',
+        ]}
+      >
         <ControlGroup>
           <Label title="Label"></Label>
           <Input
@@ -38,7 +43,15 @@ export default function Inputs() {
             placeholder="Placeholder"
           ></Input>
         </ControlGroup>
-      </ComponentRowLayout> */}
+        <ControlGroup>
+          <Input
+            error
+            label="label"
+            helperText="Some interesting text"
+            placeholder="Placeholder"
+          ></Input>
+        </ControlGroup>
+      </ComponentRowLayout>
     </div>
   );
 }
