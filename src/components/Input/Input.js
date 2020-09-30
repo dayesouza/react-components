@@ -4,18 +4,34 @@ import classNames from "classnames";
 import Label from "../Label/Label";
 import HelperText from "../HelperText/HelperText";
 
-export default function Input({ error, label, helperText, ...props }) {
+export default function Input({
+  error,
+  label,
+  helperText,
+  startIcon,
+  endIcon,
+  ...props
+}) {
   const classes = classNames({
     error: error,
+    icon: startIcon || endIcon,
     ...props.className,
   });
-  const text = "Some helper text";
+
+  const divClasses = classNames({
+    divInput: true,
+    icon: startIcon || endIcon,
+  });
 
   return (
     <>
       {label && <Label error={error} title="Label"></Label>}
-      <input {...props} className={classes}></input>
-      {helperText && <HelperText text={text} error={error}></HelperText>}
+      <div class={divClasses}>
+        {startIcon && <i className="material-icons">{startIcon}</i>}
+        <input {...props} className={classes}></input>
+        {endIcon && <i className="material-icons">{endIcon}</i>}
+      </div>
+      {helperText && <HelperText text={helperText} error={error}></HelperText>}
     </>
   );
 }

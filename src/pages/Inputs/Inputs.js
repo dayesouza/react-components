@@ -32,22 +32,33 @@ export default function Inputs() {
 
       <ComponentRowLayout
         label={[
-          '<Input helperText="Some interesting text" />',
-          '<Input helperText="Some interesting text" error/>',
+          '<Input helperText="Some text" />',
+          '<Input helperText="Some text" error/>',
         ]}
       >
         <ControlGroup>
           <Label title="Label"></Label>
-          <Input
-            helperText="Some interesting text"
-            placeholder="Placeholder"
-          ></Input>
+          <Input helperText="Some text" placeholder="Placeholder"></Input>
         </ControlGroup>
         <ControlGroup>
           <Input
             error
             label="label"
-            helperText="Some interesting text"
+            helperText="Some text"
+            placeholder="Placeholder"
+          ></Input>
+        </ControlGroup>
+      </ComponentRowLayout>
+
+      <ComponentRowLayout label={["<Input startIcon />", "<Input endIcon />"]}>
+        <ControlGroup>
+          <Label title="Label"></Label>
+          <Input startIcon="phone" placeholder="Placeholder"></Input>
+        </ControlGroup>
+        <ControlGroup>
+          <Input
+            endIcon="phone"
+            label="label"
             placeholder="Placeholder"
           ></Input>
         </ControlGroup>

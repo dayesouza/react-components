@@ -1,5 +1,24 @@
 @import "../../variables.scss";
 
+.divInput {
+  text-align: initial;
+
+  &.icon {
+    border: 1px solid $input-border;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+
+    i {
+      margin: 0px 13px 0px 13px;
+    }
+
+    &:focus-within {
+      border: 1px solid $input-focus;
+    }
+  }
+}
+
 input {
   border-radius: 8px;
   width: 200px;
@@ -10,16 +29,27 @@ input {
   padding: 12px;
   color: $input-text-color;
   font-family: Noto Sans JP;
-  // margin: auto;
 
-  &:hover:not([disabled]),
-  &.error:hover {
+  &:hover:not(.icon):not([disabled]) {
     border: 1px solid $input-text-color;
   }
 
   &[disabled] {
     background-color: #f2f2f2;
   }
+
+  &.icon {
+    border: unset;
+  }
+}
+input:focus,
+input:active {
+  -webkit-appearance: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  outline: -webkit-focus-ring-color auto 0px;
+  background-color: rgb(250, 250, 250);
 }
 
 input.error {
