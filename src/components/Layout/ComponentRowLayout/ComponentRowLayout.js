@@ -7,7 +7,7 @@ export default function ComponentRowLayout({ children, label }) {
         {Array.isArray(children) &&
           children.map((button, index) => {
             return (
-              <div key={index}>
+              <div key={index} className="w-100">
                 <div className="code-label">
                   <code>{`${
                     Array.isArray(label) ? label[index] : label
@@ -19,7 +19,7 @@ export default function ComponentRowLayout({ children, label }) {
           })}
 
         {!Array.isArray(children) && (
-          <div>
+          <div className="w-100">
             <div className="code-label">
               <code>{`${label}`}</code>
             </div>

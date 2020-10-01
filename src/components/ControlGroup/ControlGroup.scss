@@ -1,8 +1,9 @@
 @import "../../variables.scss";
 
 div.control-group {
-  display: flex;
+  display: inline-flex;
   flex-direction: column;
+
   &:focus-within {
     input:not([disabled]):not(.icon) {
       outline: 0;
